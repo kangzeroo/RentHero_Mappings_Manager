@@ -1,11 +1,11 @@
-# Typeform Webhook
+# DialogFlow + Ad Specifics Sandbox
 
 ## Objectives
 This `Typeform_Sandbox` repo serves the following development purposes:
 1. View Typeforms Question Structures to see question_ids. Used for updating `api/landlord_*_form/js/*_typeform_elastic_map.js`
 2. Getting Typeform Results to see how submitted Typeforms look as JSON. You will not need this but good to know the flow. Be careful not to modify in production!
-3. Testing validity of `api/landlord_*_form/js/*_typeform_elastic_map.js` and `api/landlord_*_form/js/*_elasic_dialog_map.js`. These checks verify that a new mapping will actually work in production. Make sure you run this every time before uploading a new mapping to S3. Use `npm run basic-test`, or see `package.json` for a list of all tests.
-4. Saving a new mapping to S3. Only do this when you are certain you want to update mappings and all tests have passed. Use `npm run update-test` or see `package.json` for a list of all updates.
+3. Testing validity of `api/landlord_*_form/js/*_typeform_elastic_map.js` and `api/landlord_*_form/js/*_elasic_dialog_map.js`. These checks verify that a new mapping will actually work in production. Make sure you run this every time before uploading a new mapping to S3. Use `npm run basic-test`, or see `package.json > scripts` for a list of all tests.
+4. Saving a new mapping to S3. Only do this when you are certain you want to update mappings and all tests have passed. Use `npm run update-test` or see `package.json > scripts` for a list of all updates.
 
 ## You will need
 Please keep all credentials secure inside the `creds/` folder. Do not let outsiders get access to our credentials or else they can fuck with us!!
@@ -45,7 +45,7 @@ You have 2 mappings per Typeform. They are listed below and linked together base
 1. `api/landlord_basic_form/js/basic_elastic_dialog_map.js` which determines what DialogFlow Intents correspond to what `TAG_IDs`. Update this file whenever you add new DialogFlow Intents that affect the `basic_typeform`, and repeat for the other typeforms (`advanced`, `seeking`...etc).
 2. `api/landlord_basic_form/js/basic_typeform_elastic_map.js` which determines what Typeform Questions correspond to what `TAG_IDs`. Update this file whenever you add a question or change a question type on a Typeform.
 <br/>
-Whenever you have updated any mapping, be sure to test it using `npm run basic-test`. See `package.json` for the full list of possible tests you can run.
+Whenever you have updated any mapping, be sure to test it using `npm run basic-test`. See `package.json > scripts` for the full list of possible tests you can run.
 
 ## Updating Mappings
-Mappings are stored to AWS S3 so that multiple microservices can access them. Each mapping has a pre-defined location on our S3 bucket. Only update a mapping if it has passed the tests first. To update a mapping, run `npm run update-basic`. See `package.json` for the full list of possible update commands you can run.
+Mappings are stored to AWS S3 so that multiple microservices can access them. Each mapping has a pre-defined location on our S3 bucket. Only update a mapping if it has passed the tests first. To update a mapping, run `npm run update-basic`. See `package.json > scripts` for the full list of possible update commands you can run.
