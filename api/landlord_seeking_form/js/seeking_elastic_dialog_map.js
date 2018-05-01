@@ -22,6 +22,20 @@ exports.seeking_elastic_dialog_map = {
         'COMMITMENT_DEADLINE'
       ]
     },
+    {
+      dialogFlow_intentName: '.SPECIFIC_UNSTRUC---AwesomeLevel',
+      dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/fdf39d26-cf97-46a3-8694-db21933f0c0e',
+      typeForm_Tags: [
+        'AWESOME'
+      ]
+    },
+    {
+      dialogFlow_intentName: '.SPECIFIC_STRUC---CoolLevel',
+      dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/fdf39d26-cf97-46a3-8694-db21933f0c0e',
+      typeForm_Tags: [
+        'COOL'
+      ]
+    }
     // {
     //   dialogFlow_intentName: 'SUPPORT_DOCS',
     //   dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/ece7c31b-b343-45b7-ad62-6dcdbec0af1f',

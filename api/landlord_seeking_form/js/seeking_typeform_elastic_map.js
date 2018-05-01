@@ -21,5 +21,10 @@ exports.seeking_typeform_elastic_map = {
       tag_ids: ['SUPPORT_DOCS'],
       sample_phrasing: "Do we require any supporting documents?"
     },
+    {
+      question_ids: ["kepHsZbg4iQS"],
+      tag_ids: ['AWESOME'],
+      sample_phrasing: "How awesome are you?"
+    }
   ]
 }

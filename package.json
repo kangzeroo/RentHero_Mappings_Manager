@@ -9,9 +9,11 @@
     "update-basic": "node ./api/landlord_basic_form/basic_form_update.js",
     "update-advanced": "node ./api/landlord_advanced_form/advanced_form_update.js",
     "update-seeking": "node ./api/landlord_seeking_form/seeking_form_update.js",
+    "update-sql": "node ./api/dialogflow_sql_match/dialogflow_sql_update.js",
     "test-basic": "node ./api/landlord_basic_form/basic_form_test.js",
     "test-advanced": "node ./api/landlord_advanced_form/advanced_form_test.js",
-    "test-seeking": "node ./api/landlord_seeking_form/seeking_form_test.js"
+    "test-seeking": "node ./api/landlord_seeking_form/seeking_form_test.js",
+    "test-sql": "node ./api/dialogflow_sql_match/dialogflow_sql_test.js"
   },
   "engines": {
     "node": "6.9.0"
