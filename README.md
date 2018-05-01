@@ -1,5 +1,9 @@
 # DialogFlow + Ad Specifics Sandbox
 
+## VidYard Instructions (WARNING: May be outdated)
+1. DialogFlow + RentHero Overview (https://share.vidyard.com/watch/spssnCx2dD8FAdTxU6vPFA)
+2. Linking Typeform with DialogFlow (https://share.vidyard.com/watch/c4vVqGRUt4SKgMnzLeurR8)
+
 ## Objectives
 This `Typeform_Sandbox` repo serves the following development purposes:
 1. View Typeforms Question Structures to see question_ids. Used for updating `api/landlord_*_form/js/*_typeform_elastic_map.js`
