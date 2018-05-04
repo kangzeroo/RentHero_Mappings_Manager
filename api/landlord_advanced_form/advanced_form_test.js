@@ -2,7 +2,7 @@ const axios = require('axios')
 const auth_token = require('../../creds/dialogflow_api_key').auth_token
 const advanced_elastic_dialog_map = require('./js/advanced_elastic_dialog_map').advanced_elastic_dialog_map
 const advanced_typeform_elastic_map = require('./js/advanced_typeform_elastic_map').advanced_typeform_elastic_map
-const projectID = 'renthero-landlord-ai'
+const projectID = 'dev-landlordai'
 const form_id = 'f2E1MJ'
 
 const testValidityOfMappings = () => {

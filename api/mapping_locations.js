@@ -8,6 +8,6 @@ exports.URL_advanced_elastic_dialog_map = 'https://s3.amazonaws.com/renthero-ai-
 exports.URL_seeking_typeform_elastic_map = 'https://s3.amazonaws.com/renthero-ai-typeform-references/seeking_typeform/seeking_typeform_elastic_map.json'
 exports.URL_seeking_elastic_dialog_map = 'https://s3.amazonaws.com/renthero-ai-typeform-references/seeking_typeform/seeking_elastic_dialog_map.json'
 
-exports.URL_dialogflow_sql_match_map = 'https://s3.amazonaws.com/renthero-ai-typeform-references/URL_dialogflow_sql/dialogflow_sql_match_map.json'
+exports.URL_dialogflow_sql_match_map = 'https://s3.amazonaws.com/renthero-ai-typeform-references/dialogflow_sql/dialogflow_sql_match_map.json'
 
 exports.BUCKET_NAME = 'renthero-ai-typeform-references'
