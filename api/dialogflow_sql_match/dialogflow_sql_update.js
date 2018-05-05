@@ -1,13 +1,13 @@
 const AWS = require('aws-sdk')
 const path = require('path')
-const pathToAWSConfig = path.join(__dirname, '../..', 'creds', 'aws_config.json')
+const pathToAWSConfig = path.join(__dirname, '../..', 'credentials', 'aws_config.json')
 const aws_config = require(pathToAWSConfig)
 AWS.config.update(aws_config)
 const S3 = new AWS.S3()
 
-const dialogflow_sql_match_map = require('./js/dialogflow_sql_match_map').dialogflow_sql_match_map
-const URL_dialogflow_sql_match_map = require('../mapping_locations').URL_dialogflow_sql_match_map
-const BUCKET_NAME = require('../mapping_locations').BUCKET_NAME
+const dialogflow_sql_match_map = require('./js/dialogflow_sql_match_map').getMap().dialogflow_sql_match_map
+const URL_dialogflow_sql_match_map = require('../mapping_locations').getMap().URL_dialogflow_sql_match_map
+const BUCKET_NAME = require('../mapping_locations').getMap().BUCKET_NAME
 
 const uploadS3 = (filePath, fileBody) => {
   const p = new Promise((res, rej) => {

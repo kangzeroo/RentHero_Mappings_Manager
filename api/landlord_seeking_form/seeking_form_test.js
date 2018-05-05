@@ -1,9 +1,9 @@
 const axios = require('axios')
-const auth_token = require('../../creds/dialogflow_api_key').auth_token
+const auth_token = require('../../credentials/dialogflow_api_key').auth_token
 const seeking_elastic_dialog_map = require('./js/seeking_elastic_dialog_map').seeking_elastic_dialog_map
 const seeking_typeform_elastic_map = require('./js/seeking_typeform_elastic_map').seeking_typeform_elastic_map
-const projectID = 'dev-landlordai'
-const form_id = 'ksLFy7'
+const PROJECT_ID_LANDLORD_BACKEND = require('../ENV_CREDS').PROJECT_ID_LANDLORD_BACKEND
+const seeking_form_id = require('../mapping_locations').getTypeforms().seeking_form_id
 
 const testValidityOfMappings = () => {
   let tests = {
@@ -40,8 +40,8 @@ const testValidityOfMappings = () => {
 const testFormIdsMatch = () => {
   const p = new Promise((res, rej) => {
     console.log('=======> TEST 1: Testing that both our mappings have the same Typeform form_id (seeking_elastic_dialog_map and seeking_typeform_elastic_map)')
-    console.log(`seeking_elastic_dialog_map.form_id = ${seeking_elastic_dialog_map.form_id}, seeking_typeform_elastic_map.form_id = ${seeking_typeform_elastic_map.form_id}, actual form_id = ${form_id}`)
-    const result = (seeking_elastic_dialog_map.form_id === seeking_typeform_elastic_map.form_id) && (seeking_elastic_dialog_map.form_id === form_id)
+    console.log(`seeking_elastic_dialog_map.form_id = ${seeking_elastic_dialog_map.form_id}, seeking_typeform_elastic_map.form_id = ${seeking_typeform_elastic_map.form_id}, actual form_id = ${seeking_form_id}`)
+    const result = (seeking_elastic_dialog_map.form_id === seeking_typeform_elastic_map.form_id) && (seeking_elastic_dialog_map.form_id === seeking_form_id)
     if (result) {
       console.log(`=======> TEST 1 PASSED: ${result}`)
       res(result)
@@ -62,7 +62,7 @@ const testDialogIntentsExist = () => {
     }
   }
   const p = new Promise((res, rej) => {
-    axios.get(`https://dialogflow.googleapis.com/v2/projects/${projectID}/agent/intents`, headers)
+    axios.get(`https://dialogflow.googleapis.com/v2/projects/${PROJECT_ID_LANDLORD_BACKEND}/agent/intents`, headers)
       .then((data) => {
         // res(data.data)
         let allExist = true

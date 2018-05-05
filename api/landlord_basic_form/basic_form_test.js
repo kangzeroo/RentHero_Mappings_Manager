@@ -1,9 +1,9 @@
 const axios = require('axios')
-const auth_token = require('../../creds/dialogflow_api_key').auth_token
+const auth_token = require('../../credentials/dialogflow_api_key').auth_token
 const basic_elastic_dialog_map = require('./js/basic_elastic_dialog_map').basic_elastic_dialog_map
 const basic_typeform_elastic_map = require('./js/basic_typeform_elastic_map').basic_typeform_elastic_map
-const projectID = 'dev-landlordai'
-const form_id = 'xvmqm2'
+const PROJECT_ID_LANDLORD_BACKEND = require('../ENV_CREDS').PROJECT_ID_LANDLORD_BACKEND
+const basic_form_id = require('../mapping_locations').getTypeforms().basic_form_id
 
 const testValidityOfMappings = () => {
   let tests = {
@@ -40,8 +40,8 @@ const testValidityOfMappings = () => {
 const testFormIdsMatch = () => {
   const p = new Promise((res, rej) => {
     console.log('=======> TEST 1: Testing that both our mappings have the same Typeform form_id (basic_elastic_dialog_map and basic_typeform_elastic_map)')
-    console.log(`basic_elastic_dialog_map.form_id = ${basic_elastic_dialog_map.form_id}, basic_typeform_elastic_map.form_id = ${basic_typeform_elastic_map.form_id}, actual form_id = ${form_id}`)
-    const result = (basic_elastic_dialog_map.form_id === basic_typeform_elastic_map.form_id) && (basic_elastic_dialog_map.form_id === form_id)
+    console.log(`basic_elastic_dialog_map.form_id = ${basic_elastic_dialog_map.form_id}, basic_typeform_elastic_map.form_id = ${basic_typeform_elastic_map.form_id}, actual form_id = ${basic_form_id}`)
+    const result = (basic_elastic_dialog_map.form_id === basic_typeform_elastic_map.form_id) && (basic_elastic_dialog_map.form_id === basic_form_id)
     if (result) {
       console.log(`=======> TEST 1 PASSED: ${result}`)
       res(result)
@@ -62,7 +62,7 @@ const testDialogIntentsExist = () => {
     }
   }
   const p = new Promise((res, rej) => {
-    axios.get(`https://dialogflow.googleapis.com/v2/projects/${projectID}/agent/intents`, headers)
+    axios.get(`https://dialogflow.googleapis.com/v2/projects/${PROJECT_ID_LANDLORD_BACKEND}/agent/intents`, headers)
       .then((data) => {
         // res(data.data)
         let allExist = true

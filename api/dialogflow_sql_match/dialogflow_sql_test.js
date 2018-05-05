@@ -1,5 +1,5 @@
 const axios = require('axios')
-const auth_token = require('../../creds/dialogflow_api_key').auth_token
+const auth_token = require('../../credentials/dialogflow_api_key').auth_token
 const dialogflow_sql_match_map = require('./js/dialogflow_sql_match_map').dialogflow_sql_match_map
 const projectID = 'renthero-landlord-ai'
 const form_id = 'f2E1MJ'

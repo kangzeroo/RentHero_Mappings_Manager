@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "NODE_ENV=development nodemon server.js",
+    "staging": "NODE_ENV=staging nodemon server.js",
     "prod": "NODE_ENV=production nodemon server.js",
     "update-basic": "node ./api/landlord_basic_form/basic_form_update.js",
     "update-advanced": "node ./api/landlord_advanced_form/advanced_form_update.js",

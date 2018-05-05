@@ -10,7 +10,7 @@ curl --request PUT \
 
 // WORKING EXAMPLE
 curl --request PUT \
-  --url https://api.typeform.com/forms/xvmqm2/webhooks/renthero_basic_form \
+  --url https://api.typeform.com/forms/ksLFy7/webhooks/renthero_seeking_form \
   --header 'Authorization: bearer 2kSctvHaxdvidEhUuXjL5C35DrPTTb2MxC34mvRVdgfe' \
   --header 'Content-Type: application/json' \
-  -d '{"url":"https://renthero.host:8301/basic_typeform", "enabled":true}'
+  -d '{"url":"https://e663263e.ngrok.io/seeking_typeform", "enabled":true}'

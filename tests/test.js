@@ -1,4 +1,4 @@
-const URL_seeking_elastic_dialog_map = require('./api/mapping_locations').URL_seeking_elastic_dialog_map
+const URL_seeking_elastic_dialog_map = require('./api/mapping_locations').getMap().URL_seeking_elastic_dialog_map
 
 
 const fileKey = URL_seeking_elastic_dialog_map.slice(

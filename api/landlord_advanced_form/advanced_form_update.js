@@ -1,15 +1,15 @@
 const AWS = require('aws-sdk')
 const path = require('path')
-const pathToAWSConfig = path.join(__dirname, '../..', 'creds', 'aws_config.json')
+const pathToAWSConfig = path.join(__dirname, '../..', 'credentials', 'aws_config.json')
 const aws_config = require(pathToAWSConfig)
 AWS.config.update(aws_config)
 const S3 = new AWS.S3()
 
 const advanced_elastic_dialog_map = require('./js/advanced_elastic_dialog_map').advanced_elastic_dialog_map
 const advanced_typeform_elastic_map = require('./js/advanced_typeform_elastic_map').advanced_typeform_elastic_map
-const URL_advanced_elastic_dialog_map = require('../mapping_locations').URL_advanced_elastic_dialog_map
-const URL_advanced_typeform_elastic_map = require('../mapping_locations').URL_advanced_typeform_elastic_map
-const BUCKET_NAME = require('../mapping_locations').BUCKET_NAME
+const URL_advanced_elastic_dialog_map = require('../mapping_locations').getMap().URL_advanced_elastic_dialog_map
+const URL_advanced_typeform_elastic_map = require('../mapping_locations').getMap().URL_advanced_typeform_elastic_map
+const BUCKET_NAME = require('../mapping_locations').getMap().BUCKET_NAME
 
 const uploadS3 = (filePath, fileBody) => {
   const p = new Promise((res, rej) => {
