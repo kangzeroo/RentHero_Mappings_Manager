@@ -1,5 +1,6 @@
 const NODE_ENV = require('./ENV_CREDS').NODE_ENV
 
+// for knowledge domain mappings, check `/api/knowledge_domains/knowledge_domain_mappings.js`
 exports.getMap = function() {
   const bucket_path = 'https://s3.amazonaws.com/renthero-ai-mappings/'
   const bucket_name = 'renthero-ai-mappings'

@@ -9,4 +9,4 @@ exports.PROJECT_ID_LANDLORD_BACKEND = 'dev-landlordai-8221e'
 
 // PROD
 // exports.NODE_ENV = 'production'
-// exports.PROJECT_ID_LANDLORD_BACKEND = 'dev-landlordai-8221e'
+// exports.PROJECT_ID_LANDLORD_BACKEND = 'prod-landlordbackend'
