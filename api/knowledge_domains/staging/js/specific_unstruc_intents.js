@@ -1,4 +1,4 @@
-const NODE_ENV = require('../../ENV_CREDS').NODE_ENV
+const NODE_ENV = require('../../../ENV_CREDS').NODE_ENV
 let endpoint
 if (NODE_ENV === 'production') {
   endpoint = 'https://renthero.host:8304'
