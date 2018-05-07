@@ -1,7 +1,11 @@
 exports.intents = {
   domain_prefix: '.SPEC_STRUC',
   relationships: [
-
+    {
+      dialogFlow_intentName: '.SPEC_STRUC---Liability',
+      dialogFlow_intentID: 'projects/dev-landlordai-8221e/agent/intents/38ff2587-ecac-4102-b64d-3ffd48add5ed',
+      endpoint: 'YO MOMMA ENDPOINT'
+    },
     {
       dialogFlow_intentName: '.SPEC_STRUC---MonthlyCostPerRoom',
       dialogFlow_intentID: 'projects/dev-landlordai/agent/intents/0211ae29-60cc-4b73-8776-299d56a12381',
@@ -31,7 +35,7 @@ exports.intents = {
     {
       dialogFlow_intentName: '.SPEC_STRUC---Amenities',
       dialogFlow_intentID: 'projects/dev-landlordai-8221e/agent/intents/ebc0403a-3a12-46bf-b55a-335ee0454d46',
-      endpoint: 'https://285f9b5c.ngrok.io/get_ad_amenities'
+      endpoint: 'https://285f9b5c.ngrok.io/get_ad_description'
     },
   ]
 }
