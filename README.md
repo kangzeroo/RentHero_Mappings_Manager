@@ -4,6 +4,10 @@
 1. DialogFlow + RentHero Overview (https://share.vidyard.com/watch/spssnCx2dD8FAdTxU6vPFA)
 2. Linking Typeform with DialogFlow (https://share.vidyard.com/watch/c4vVqGRUt4SKgMnzLeurR8)
 
+## IMPORTANT TO READ:
+- Do not use the deprecated `npm run update-basic` and other similar commands. They do not have environments set up (dev, staging, prod). You should use the command `npm run dev`, `npm run staging` or `npm run prod` and follow the instructions on the terminal screen.
+- If you run into a `401 Error - Request had invalid authentication credentials. Expected OAuth 2 access token...`, then you need to update your `credentials/dialogflow_api_key.js`. See instructions below (`How to get DialogFlow Credentials using Google OAuth Playground`)
+
 ## Objectives
 This `Typeform_Sandbox` repo serves the following development purposes:
 0. Easy way to manage mappings in dev/staging/prod
@@ -23,7 +27,8 @@ Please keep all credentials secure inside the `credentials/` folder. Do not let 
 7. NodeJS environment setup. Be sure to also run `npm install` so that you can use all the libraries.
 
 ## How to switch node environments (dev, staging, prod)
-To change `NODE_ENV`, simply go to `./api/ENV_CREDS.js` and comment out `development`, `staging` or `production`. All `npm` actions will be applied to the `NODE_ENV` you choose. Be careful not to accidentally something in prod!
+1. Method 1 (preferred): Run the appropriate command: `npm run dev`, `npm run staging` or `npm run prod`
+2. Method 2 (deprecated): To change `NODE_ENV`, simply go to `./api/ENV_CREDS.js` and comment out `development`, `staging` or `production`. All `npm` actions will be applied to the `NODE_ENV` you choose. Be careful not to accidentally something in prod!
 
 ## How to get DialogFlow Credentials using Google OAuth Playground
 1. Go to `https://developers.google.com/oauthplayground/`

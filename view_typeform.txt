@@ -8,5 +8,5 @@ curl --request GET \
 
 // WORKING EXAMPLE
 curl --request GET \
-  --url https://api.typeform.com/forms/ksLFy7 \
+  --url https://api.typeform.com/forms/xvmqm2 \
   --header 'Authorization: bearer 2kSctvHaxdvidEhUuXjL5C35DrPTTb2MxC34mvRVdgfe' \

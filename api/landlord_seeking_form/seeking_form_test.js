@@ -1,7 +1,7 @@
 const axios = require('axios')
 const auth_token = require('../../credentials/dialogflow_api_key').auth_token
-const seeking_elastic_dialog_map = require('./js/seeking_elastic_dialog_map').seeking_elastic_dialog_map
-const seeking_typeform_elastic_map = require('./js/seeking_typeform_elastic_map').seeking_typeform_elastic_map
+const seeking_elastic_dialog_map = require('./'+process.env.NODE_ENV+'/js/seeking_elastic_dialog_map').seeking_elastic_dialog_map
+const seeking_typeform_elastic_map = require('./'+process.env.NODE_ENV+'/js/seeking_typeform_elastic_map').seeking_typeform_elastic_map
 const PROJECT_ID_LANDLORD_BACKEND = require('../ENV_CREDS').PROJECT_ID_LANDLORD_BACKEND
 const seeking_form_id = require('../mapping_locations').getTypeforms().seeking_form_id
 
@@ -120,7 +120,7 @@ const testAllIntentsMatchTypeformTags = () => {
   }
 }
 
-testValidityOfMappings()
+exports.test = testValidityOfMappings
 
 
 // // List All Intents
