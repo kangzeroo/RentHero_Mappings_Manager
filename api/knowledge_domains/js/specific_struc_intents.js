@@ -36,6 +36,6 @@ exports.intents = {
       dialogFlow_intentName: '.SPEC_STRUC---Amenities',
       dialogFlow_intentID: 'projects/dev-landlordai-8221e/agent/intents/ebc0403a-3a12-46bf-b55a-335ee0454d46',
       endpoint: 'https://285f9b5c.ngrok.io/get_ad_description'
-    },
+    }
   ]
 }
