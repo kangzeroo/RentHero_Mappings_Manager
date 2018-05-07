@@ -4,20 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=development nodemon server.js",
-    "staging": "NODE_ENV=staging nodemon server.js",
-    "prod": "NODE_ENV=production nodemon server.js",
-
+    "dev": "NODE_ENV=development node index.js",
+    "staging": "NODE_ENV=staging node index.js",
+    "prod": "NODE_ENV=production node index.js",
     "update-basic": "node ./api/landlord_basic_form/basic_form_update.js",
     "update-advanced": "node ./api/landlord_advanced_form/advanced_form_update.js",
     "update-seeking": "node ./api/landlord_seeking_form/seeking_form_update.js",
     "update-sql": "node ./api/dialogflow_sql_match/dialogflow_sql_update.js",
-
     "test-basic": "node ./api/landlord_basic_form/basic_form_test.js",
     "test-advanced": "node ./api/landlord_advanced_form/advanced_form_test.js",
     "test-seeking": "node ./api/landlord_seeking_form/seeking_form_test.js",
     "test-sql": "node ./api/dialogflow_sql_match/dialogflow_sql_test.js",
-
     "test-domains": "node ./api/knowledge_domains/knowledge_domains_test.js",
     "update-domains": "node ./api/knowledge_domains/knowledge_domains_update.js"
   },
@@ -27,6 +24,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "async": "^2.6.0",
     "aws-sdk": "2.68.0",
     "axios": "0.18.0",
     "body-parser": "1.17.2",
@@ -46,6 +44,7 @@
     "nodemailer": "4.6.4",
     "nodemon": "1.11.0",
     "pg": "7.1.2",
+    "prompt": "^1.0.0",
     "rxjs": "5.4.0",
     "socket.io": "2.0.3",
     "twilio": "3.10.0",
