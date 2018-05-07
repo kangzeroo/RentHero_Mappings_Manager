@@ -16,8 +16,6 @@ exports.intents = {
       dialogFlow_intentID: 'projects/dev-landlordai-8221e/agent/intents/ebc0403a-3a12-46bf-b55a-335ee0454d46',
       endpoint: 'https://c57cc499.ngrok.io/get_images_for_ad'
     },
-
-    // check intent id
     {
       dialogFlow_intentName: '.SPEC_STRUC---Address',
       dialogFlow_intentID: 'projects/dev-landlordai-8221e/agent/intents/8e180cda-4d76-4bec-a392-d2b80a3151a4',
@@ -28,8 +26,6 @@ exports.intents = {
       dialogFlow_intentID: 'projects/dev-landlordai-8221e/agent/intents/8b883ca9-9784-490b-957c-75dd505e573e',
       endpoint: 'https://c57cc499.ngrok.io/get_ad_postal_code'
     },
-
-    // end
     {
       dialogFlow_intentName: '.SPEC_STRUC---Description',
       dialogFlow_intentID: 'projects/dev-landlordai-8221e/agent/intents/9065fb2b-5d2c-440a-bec2-541d9ba1feaa',
