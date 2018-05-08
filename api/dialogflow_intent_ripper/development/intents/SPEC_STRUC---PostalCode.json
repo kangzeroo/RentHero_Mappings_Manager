@@ -1,0 +1,1 @@
+{"name":"projects/dev-landlordai-8221e/agent/intents/8b883ca9-9784-490b-957c-75dd505e573e","displayName":"SPEC_STRUC---PostalCode","priority":500000,"webhookState":"WEBHOOK_STATE_ENABLED","parameters":[{"name":"87906361-f7c1-4413-b304-ccfa01550624","displayName":"PostalCode","value":"$PostalCode","entityTypeDisplayName":"@PostalCode"}],"messages":[{"text":{}}]}

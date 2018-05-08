@@ -1,0 +1,1 @@
+{"name":"projects/dev-landlordai-8221e/agent/intents/96baa61f-d125-49d3-938c-a395798fa9d5","displayName":"SPEC_UNSTRUC---LeaseRenewal","priority":500000,"webhookState":"WEBHOOK_STATE_ENABLED","parameters":[{"name":"ec9238f1-7052-46d3-b8a5-daa0b69beb6d","displayName":"Lease","value":"$Lease","entityTypeDisplayName":"@Lease"}],"messages":[{"text":{}}]}

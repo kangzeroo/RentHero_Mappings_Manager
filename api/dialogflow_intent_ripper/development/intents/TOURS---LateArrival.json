@@ -1,0 +1,1 @@
+{"name":"projects/dev-landlordai-8221e/agent/intents/3d52f3f9-a661-4ade-b533-1ef710d6a77a","displayName":"TOURS---LateArrival","priority":500000,"parameters":[{"name":"1b6d2160-0565-4f43-b53b-7d09c52ab7a5","displayName":"LateArrival","value":"$LateArrival","entityTypeDisplayName":"@LateArrival"}],"messages":[{"text":{"text":["Not a problem, we'll see you shortly!"]}}]}

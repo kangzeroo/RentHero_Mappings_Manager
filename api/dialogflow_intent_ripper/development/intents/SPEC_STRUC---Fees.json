@@ -1,0 +1,1 @@
+{"name":"projects/dev-landlordai-8221e/agent/intents/75794854-1932-42fd-981d-a8e6c82eb967","displayName":"SPEC_STRUC---Fees","priority":500000,"webhookState":"WEBHOOK_STATE_ENABLED","parameters":[{"name":"096c30a8-5e76-4966-bdc6-4861c544c601","displayName":"ExtraFees","value":"$ExtraFees","entityTypeDisplayName":"@ExtraFees"}],"messages":[{"text":{}}]}

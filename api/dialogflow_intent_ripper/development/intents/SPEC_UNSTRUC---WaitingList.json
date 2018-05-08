@@ -1,0 +1,1 @@
+{"name":"projects/dev-landlordai-8221e/agent/intents/0158531c-bc65-4b1b-bd54-36f9adf70c36","displayName":"SPEC_UNSTRUC---WaitingList","priority":500000,"webhookState":"WEBHOOK_STATE_ENABLED","parameters":[{"name":"b027d539-70e2-4282-8c43-d17b8e7fa2af","displayName":"AboutSuite","value":"$AboutSuite","entityTypeDisplayName":"@AboutSuite"}],"messages":[{"text":{}}]}

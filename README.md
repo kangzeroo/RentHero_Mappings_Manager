@@ -15,6 +15,7 @@ This `Typeform_Sandbox` repo serves the following development purposes:
 2. Getting Typeform Results to see how submitted Typeforms look as JSON. You will not need this but good to know the flow. Be careful not to modify in production!
 3. Testing validity of `api/landlord_*_form/js/*_typeform_elastic_map.js` and `api/landlord_*_form/js/*_elasic_dialog_map.js`. These checks verify that a new mapping will actually work in production. Make sure you run this every time before uploading a new mapping to S3. Use `npm run basic-test`, or see `package.json > scripts` for a list of all tests.
 4. Saving a new mapping to S3. Only do this when you are certain you want to update mappings and all tests have passed. Use `npm run update-test` or see `package.json > scripts` for a list of all updates.
+5. Downloading DialogFlow agent intents, and uploading intents to another agent (`npm run dangerously-update`)
 
 ## You will need
 Please keep all credentials secure inside the `credentials/` folder. Do not let outsiders get access to our credentials or else they can fuck with us!!
