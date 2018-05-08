@@ -1,5 +1,5 @@
 const axios = require('axios')
-const auth_token = require('../../credentials/dialogflow_api_key').auth_token
+const auth_token = require('../../credentials/'+process.env.NODE_ENV+'/dialogflow_api_key').auth_token
 
 const test = () => {
   console.log('testing intents --> knowledge domains --> lambda...')
