@@ -1,0 +1,1 @@
+{"name":"projects/dev-landlordai-8221e/agent/intents/413591c8-8425-4077-b4f6-4053112eb243","displayName":"TOURS---DateConfirm","priority":500000,"parameters":[{"name":"e3f93378-71e1-44d9-bce4-c2adf5581a03","displayName":"Reschedule","value":"$Reschedule","entityTypeDisplayName":"@Reschedule","isList":true}],"messages":[{"text":{}}]}

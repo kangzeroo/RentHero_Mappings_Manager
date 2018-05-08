@@ -1,0 +1,1 @@
+{"name":"projects/dev-landlordai-8221e/agent/intents/ff78cb29-25cf-4e75-b840-93f85cc3803b","displayName":"SPEC_STRUC---Amenities","priority":500000,"webhookState":"WEBHOOK_STATE_ENABLED","parameters":[{"name":"c2a65cd6-110c-443a-99b1-21e1e8ece2bf","displayName":"Amenities","value":"$Amenities","entityTypeDisplayName":"@Amenities"}],"messages":[{"text":{}}]}
