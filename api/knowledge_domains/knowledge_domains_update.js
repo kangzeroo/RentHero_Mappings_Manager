@@ -1,6 +1,6 @@
 const AWS = require('aws-sdk')
 const path = require('path')
-const pathToAWSConfig = path.join(__dirname, '../..', 'credentials', 'aws_config.json')
+const pathToAWSConfig = path.join(__dirname, '../..', 'credentials', process.env.NODE_ENV, 'aws_config.json')
 const aws_config = require(pathToAWSConfig)
 AWS.config.update(aws_config)
 const S3 = new AWS.S3()

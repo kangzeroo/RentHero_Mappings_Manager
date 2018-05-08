@@ -16,6 +16,7 @@ const question1 = () => {
 
       - Enter A: Update DialogFlow -> Typeform Mappings
       - Enter B: Update Knowledge Domain Mappings
+      - Enter C: Save DialogFlow Intents
 
       - Enter Q: To exit
     `
@@ -28,6 +29,8 @@ const question1 = () => {
         res('a')
       } else if (answer.toLowerCase() === 'b') {
         res('b')
+      } else if (answer.toLowerCase() === 'c') {
+        res('c')
       } else {
         rej('Not a valid selection.')
       }
@@ -151,6 +154,10 @@ const question2 = (ans) => {
           rej('Not a valid selection')
         }
       })
+    } else if (ans === 'c') {
+      const downloadIntentsFromAgent = require('./api/dialogflow_intent_ripper/agent_intent').downloadIntentsFromAgent
+      downloadIntentsFromAgent()
+      res()
     } else {
       rej('Not a valid selection.')
     }

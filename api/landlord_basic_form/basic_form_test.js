@@ -1,5 +1,5 @@
 const axios = require('axios')
-const auth_token = require('../../credentials/dialogflow_api_key').auth_token
+const auth_token = require('../../credentials/'+process.env.NODE_ENV+'/dialogflow_api_key').auth_token
 const basic_elastic_dialog_map = require('./'+process.env.NODE_ENV+'/js/basic_elastic_dialog_map').basic_elastic_dialog_map
 const basic_typeform_elastic_map = require('./'+process.env.NODE_ENV+'/js/basic_typeform_elastic_map').basic_typeform_elastic_map
 const PROJECT_ID_LANDLORD_BACKEND = require('../ENV_CREDS').PROJECT_ID_LANDLORD_BACKEND
