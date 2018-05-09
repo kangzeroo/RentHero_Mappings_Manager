@@ -48,12 +48,15 @@ const question2 = (ans) => {
 
         - Enter 1A: Test the Basic Typeform
         - Enter 1B: Update the Basic Typeform
+        - Enter 1C: Generate a mappings template
 
         - Enter 2A: Test the Advanced Typeform
         - Enter 2B: Update the Advanced Typeform
+        - Enter 2C: Generate a mappings template
 
         - Enter 3A: Test the Seeking Typeform
         - Enter 3B: Update the Seeking Typeform
+        - Enter 3C: Generate a mappings template
 
         - Enter Q: To exit
       `
@@ -68,6 +71,12 @@ const question2 = (ans) => {
           const update = require('./api/landlord_basic_form/basic_form_update').update
           update()
           res()
+        } else if (answer.toLowerCase() === '1c') {
+          const templateTypeform = require('./api/landlord_basic_form/basic_form_sandbox').templateTypeform
+          const templateDialogFlow = require('./api/landlord_basic_form/basic_form_sandbox').templateDialogFlow
+          templateTypeform()
+          templateDialogFlow()
+          res()
         } else if (answer.toLowerCase() === '2a') {
           const test = require('./api/landlord_advanced_form/advanced_form_test').test
           test()
@@ -76,6 +85,12 @@ const question2 = (ans) => {
           const update = require('./api/landlord_advanced_form/advanced_form_update').update
           update()
           res()
+        } else if (answer.toLowerCase() === '2c') {
+          const templateTypeform = require('./api/landlord_advanced_form/advanced_form_sandbox').templateTypeform
+          const templateDialogFlow = require('./api/landlord_advanced_form/advanced_form_sandbox').templateDialogFlow
+          templateTypeform()
+          templateDialogFlow()
+          res()
         } else if (answer.toLowerCase() === '3a') {
           const test = require('./api/landlord_seeking_form/seeking_form_test').test
           test()
@@ -83,6 +98,12 @@ const question2 = (ans) => {
         } else if (answer.toLowerCase() === '3b') {
           const update = require('./api/landlord_seeking_form/seeking_form_update').update
           update()
+          res()
+        } else if (answer.toLowerCase() === '3c') {
+          const templateTypeform = require('./api/landlord_seeking_form/seeking_form_sandbox').templateTypeform
+          const templateDialogFlow = require('./api/landlord_seeking_form/seeking_form_sandbox').templateDialogFlow
+          templateTypeform()
+          templateDialogFlow()
           res()
         } else {
           rej('Not a valid selection')
@@ -111,14 +132,14 @@ const question2 = (ans) => {
           const q3 = `
             Which knowledge_domain mapping do you want to update?
             \n
-            - .META
-            - .SEARCHING
-            - .GENERAL
-            - .SPEC_STRUC
-            - .SPEC_UNSTRUC
-            - .TOURS
-            - .HUMAN
-            - .GEO
+            - META
+            - SEARCHING
+            - GENERAL
+            - SPEC_STRUC
+            - SPEC_UNSTRUC
+            - TOURS
+            - HUMAN
+            - GEO
 
             - Enter Q: To exit
           `
