@@ -16,14 +16,14 @@ const update = (rl) => {
   const q1 = `
     Which knowledge_domain mapping do you want to update?
     \n
-    - .META
-    - .SEARCHING
-    - .GENERAL
-    - .SPEC_STRUC
-    - .SPEC_UNSTRUC
-    - .TOURS
-    - .HUMAN
-    - .GEO
+    - META
+    - SEARCHING
+    - GENERAL
+    - SPEC_STRUC
+    - SPEC_UNSTRUC
+    - TOURS
+    - HUMAN
+    - GEO
   `
 
   rl.question(q1, (answer) => {
@@ -58,21 +58,21 @@ const update = (rl) => {
 const grabMapping = (answer) => {
   const p = new Promise((res, rej) => {
     let mapFile
-    if (answer === '.META') {
+    if (answer === 'META') {
       mapFile = require('./'+process.env.NODE_ENV+'/js/meta_intents').intents
-    } else if (answer === '.SEARCHING') {
+    } else if (answer === 'SEARCHING') {
       mapFile = require('./'+process.env.NODE_ENV+'/js/searching_intents').intents
-    } else if (answer === '.GENERAL') {
+    } else if (answer === 'GENERAL') {
       mapFile = require('./'+process.env.NODE_ENV+'/js/general_intents').intents
-    } else if (answer === '.SPEC_STRUC') {
+    } else if (answer === 'SPEC_STRUC') {
       mapFile = require('./'+process.env.NODE_ENV+'/js/specific_struc_intents').intents
-    } else if (answer === '.SPEC_UNSTRUC') {
+    } else if (answer === 'SPEC_UNSTRUC') {
       mapFile = require('./'+process.env.NODE_ENV+'/js/specific_unstruc_intents').intents
-    } else if (answer === '.TOURS') {
+    } else if (answer === 'TOURS') {
       mapFile = require('./'+process.env.NODE_ENV+'/js/tours_intents').intents
-    } else if (answer === '.HUMAN') {
+    } else if (answer === 'HUMAN') {
       mapFile = require('./'+process.env.NODE_ENV+'/js/human_intents').intents
-    } else if (answer === '.GEO') {
+    } else if (answer === 'GEO') {
       mapFile = require('./'+process.env.NODE_ENV+'/js/geo_intents').intents
     }
     if (mapFile) {
