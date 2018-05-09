@@ -49,6 +49,7 @@ const templateDialogFlow = () => {
       })
       console.log(list)
       const template = {
+        form_id: basic_form_id,
         relationships: list.map((intent) => {
           return {
             dialogFlow_intentName: intent.displayName,

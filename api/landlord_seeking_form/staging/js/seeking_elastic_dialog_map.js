@@ -1,47 +1,33 @@
 exports.seeking_elastic_dialog_map = {
-  form_id: 'ksLFy7',
-  relationships: [
-    {
-      dialogFlow_intentName: 'TENANT_TYPE',
-      dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/ece7c31b-b343-45b7-ad62-6dcdbec0af1f',
-      typeForm_Tags: [
-        'TENANT_TYPE'
-      ]
-    },
-    {
-      dialogFlow_intentName: 'MOVE_IN_DATE',
-      dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/aa4aae5e-9da5-4565-a1e5-04fafbb9be6d',
-      typeForm_Tags: [
-        'MOVE_IN_DATE'
-      ]
-    },
-    {
-      dialogFlow_intentName: 'COMMITMENT_DEADLINE',
-      dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/54c1c6c7-ee0f-459b-b700-df0fedd72f0e',
-      typeForm_Tags: [
-        'COMMITMENT_DEADLINE'
-      ]
-    },
-    {
-      dialogFlow_intentName: '.SPECIFIC_UNSTRUC---AwesomeLevel',
-      dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/fdf39d26-cf97-46a3-8694-db21933f0c0e',
-      typeForm_Tags: [
-        'AWESOME'
-      ]
-    },
-    {
-      dialogFlow_intentName: '.SPECIFIC_STRUC---CoolLevel',
-      dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/fdf39d26-cf97-46a3-8694-db21933f0c0e',
-      typeForm_Tags: [
-        'COOL'
-      ]
-    }
-    // {
-    //   dialogFlow_intentName: 'SUPPORT_DOCS',
-    //   dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/ece7c31b-b343-45b7-ad62-6dcdbec0af1f',
-    //   typeForm_Tags: [
-    //     'SUPPORT_DOCS'
-    //   ]
-    // }
-  ]
+   "form_id":"ksLFy7",
+   "relationships":[
+       {
+          "dialogFlow_intentName":"SPEC_UNSTRUC---IdealTenant",
+          "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/60db8de3-d2b2-40a5-be2b-741a548263fd",
+          "typeForm_Tags":[
+            "IDEAL_TENANT"
+          ]
+       },
+      {
+         "dialogFlow_intentName":"SPEC_UNSTRUC---RequiredDocuments",
+         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/a43b5fad-a475-49e5-94b9-df966326a567",
+         "typeForm_Tags":[
+           "SUPPORTING_DOCS"
+         ]
+      },
+      {
+         "dialogFlow_intentName":"SPEC_UNSTRUC---IncomeRequirements",
+         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/b3d99e69-8c4b-4e98-8297-4655d8a744bf",
+         "typeForm_Tags":[
+           "INCOME_REQUIREMENTS"
+         ]
+      },
+      {
+         "dialogFlow_intentName":"SPEC_UNSTRUC---Pets",
+         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/34142e54-9554-4f7f-93a5-11f0de294a57",
+         "typeForm_Tags":[
+           "PETS"
+         ]
+      }
+   ]
 }

@@ -1,5 +1,4 @@
-
-exports.intents = {
+{
    "domain_prefix":"SPEC_UNSTRUC",
    "relationships":[
       {

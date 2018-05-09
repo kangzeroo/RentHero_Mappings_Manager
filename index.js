@@ -16,7 +16,8 @@ const question1 = () => {
 
       - Enter A: Update DialogFlow -> Typeform Mappings
       - Enter B: Update Knowledge Domain Mappings
-      - Enter C: Save DialogFlow Intents
+      - Enter C: Update DialogFlow Intents
+      - Enter D: Create Knowledge Domain Templates
 
       - Enter Q: To exit
     `
@@ -31,6 +32,8 @@ const question1 = () => {
         res('b')
       } else if (answer.toLowerCase() === 'c') {
         res('c')
+      } else if (answer.toLowerCase() === 'd') {
+        res('d')
       } else {
         rej('Not a valid selection.')
       }
@@ -178,6 +181,10 @@ const question2 = (ans) => {
     } else if (ans === 'c') {
       const downloadIntentsFromAgent = require('./api/dialogflow_intent_ripper/agent_intent').downloadIntentsFromAgent
       downloadIntentsFromAgent()
+      res()
+    } else if (ans === 'd') {
+      const generateDomainTemplates = require('./api/knowledge_domains/knowledge_domain_sandbox').generateDomainTemplates
+      generateDomainTemplates()
       res()
     } else {
       rej('Not a valid selection.')
