@@ -28,7 +28,7 @@ const generateDomainTemplates = () => {
         let x = {
           domain_prefix: `${dom}`,
           relationships: data.data.intents.filter((int) => {
-            return int.displayName.indexOf('SPEC_UNSTRUC') > -1
+            return int.displayName.indexOf(dom) > -1
           }).map((int) => {
             return {
               dialogFlow_intentName: int.displayName,
