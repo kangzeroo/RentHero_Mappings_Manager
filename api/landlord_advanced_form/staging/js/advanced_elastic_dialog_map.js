@@ -1,75 +1,89 @@
 exports.advanced_elastic_dialog_map = {
-  form_id: 'f2E1MJ',
-  relationships: [
-    // {
-    //   dialogFlow_intentName: 'SUPPORT_DOCS',
-    //   dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/b419e2b6-7aa9-42ab-b217-fc7eb3143ef6',
-    //   typeForm_Tags: [
-    //     'SUPPORT_DOCS'
-    //   ]
-    // },
-    {
-      dialogFlow_intentName: 'LEASE_DEPOSIT',
-      dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/6be7af71-ddb6-4f09-bb87-30bbc86f34d8',
-      typeForm_Tags: [
-        'LEASE_DEPOSIT'
-      ]
-    },
-    // {
-    //   dialogFlow_intentName: 'LEASE_LIABILITY',
-    //   dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/23782539-dd7a-4dd3-9d9c-ceee5633436e',
-    //   typeForm_Tags: [
-    //     'LEASE_LIABILITY'
-    //   ]
-    // },
-    {
-      dialogFlow_intentName: 'LEASE_DURATION',
-      dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/8cb918be-8aea-4b7a-b3bb-c0325384c484',
-      typeForm_Tags: [
-        'LEASE_DURATION'
-      ]
-    },
-    {
-      dialogFlow_intentName: 'LEASE_RENEWABLE',
-      dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/6e9dac2f-f05d-4bf2-84df-f241fb1f9489',
-      typeForm_Tags: [
-        'LEASE_RENEWABLE'
-      ]
-    },
-    // {
-    //   dialogFlow_intentName: 'SUBLET_CONDITIONS',
-    //   dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/8cb918be-8aea-4b7a-b3bb-c0325384c484',
-    //   typeForm_Tags: [
-    //     'SUBLET_CONDITIONS'
-    //   ]
-    // },
-    {
-      dialogFlow_intentName: 'PAYMENT_METHODS',
-      dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/759929d9-f755-4ff4-be12-9cc34b9ffb50',
-      typeForm_Tags: [
-        'PAYMENT_METHODS'
-      ]
-    },
-    {
-      dialogFlow_intentName: 'LEASE_EARLY_TERMINATION',
-      dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/193e3285-eda5-422d-8718-fe1658c09a15',
-      typeForm_Tags: [
-        'LEASE_EARLY_TERMINATION'
-      ]
-    },
-    {
-      dialogFlow_intentName: 'LEASE_HOLD',
-      dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/03c41885-6257-41ca-9fdd-dc1d269baffb',
-      typeForm_Tags: [
-        'LEASE_HOLD'
-      ]
-    },
-    {
-      dialogFlow_intentName: 'LEASE_DISCOUNT',
-      dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/66272be5-6642-4cd5-abd2-e5c71d67e042',
-      typeForm_Tags: [
-        'LEASE_DISCOUNT'
-      ]
-    }
-  ]
+  "form_id": "f2E1MJ",
+   "relationships":[
+      {
+         "dialogFlow_intentName":"SPEC_UNSTRUC---LeaseDiscount",
+         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/8fa8f098-f9c6-454f-9715-b255ef3539ab",
+         "typeForm_Tags":[
+           "LEASE_DISCOUNT"
+         ]
+      },
+      {
+         "dialogFlow_intentName":"SPEC_UNSTRUC---Commitment",
+         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/4af99d87-d70b-485d-bf8f-62667dbc48ae",
+         "typeForm_Tags":[
+           "HOLDING_COMMITMENT"
+         ]
+      },
+      {
+         "dialogFlow_intentName":"SPEC_UNSTRUC---LeaseRenewal",
+         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/96baa61f-d125-49d3-938c-a395798fa9d5",
+         "typeForm_Tags":[
+           "LEASE_RENEWABLE"
+         ]
+      },
+      {
+         "dialogFlow_intentName":"SPEC_UNSTRUC---ProRate",
+         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/7adb0f5d-0503-4692-98d3-d87348ad7ea2",
+         "typeForm_Tags":[
+           "PRORATED_RENT"
+         ]
+      },
+      {
+         "dialogFlow_intentName":"SPEC_UNSTRUC---UtilitiesPaperwork",
+         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/d77f4f5b-bb5e-4300-b11e-29046f169b61",
+         "typeForm_Tags":[
+           "UTILITIES_PAPERWORK"
+         ]
+      },
+      {
+         "dialogFlow_intentName":"SPEC_UNSTRUC---TenantInsurance",
+         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/a3f5fe2e-29b2-4320-b5f5-c48047a8037d",
+         "typeForm_Tags":[
+           "TENANT_INSURANCE"
+         ]
+      },
+      {
+         "dialogFlow_intentName":"SPEC_UNSTRUC---LeaseTerms",
+         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/f3f6efee-20ba-48b4-a371-99de6481966b",
+         "typeForm_Tags":[
+           "LEASE_TERMS"
+         ]
+      },
+      {
+         "dialogFlow_intentName":"SPEC_UNSTRUC---SubletConditions",
+         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/3c83bc73-9d32-44fb-93e0-923ca93a8658",
+         "typeForm_Tags":[
+           "SUBLET"
+         ]
+      },
+      {
+         "dialogFlow_intentName":"SPEC_UNSTRUC---Liability",
+         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/38ff2587-ecac-4102-b64d-3ffd48add5ed",
+         "typeForm_Tags":[
+           "LEASE_LIABILITY"
+         ]
+      },
+      {
+         "dialogFlow_intentName":"SPEC_UNSTRUC---DepositRequirements",
+         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/6d3705f2-32cf-432b-bf21-4dddc6611200",
+         "typeForm_Tags":[
+           "DEPOSIT_REQUIREMENTS"
+         ]
+      },
+      {
+         "dialogFlow_intentName":"SPEC_UNSTRUC---PaymentMethod",
+         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/2e2fa184-2bf6-466c-9807-a40a81eeba9f",
+         "typeForm_Tags":[
+           "PAYMENT_METHOD"
+         ]
+      },
+      {
+         "dialogFlow_intentName":"SPEC_UNSTRUC---EarlyTermination",
+         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/2276a5ba-b71a-4d6f-9df3-0aad69a4e0f3",
+         "typeForm_Tags":[
+           "EARLY_TERMINATION"
+         ]
+      }
+   ]
 }

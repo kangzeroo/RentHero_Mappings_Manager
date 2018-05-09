@@ -70,7 +70,7 @@ const testDialogIntentsExist = () => {
         basic_elastic_dialog_map.relationships.forEach((rel) => {
           let exists = false
           allIntents.forEach((int) => {
-            if (int.displayName === rel.dialogFlow_intentName && int.name === rel.dialogFlow_intentID) {
+            if (int.displayName === rel.dialogFlow_intentName) {
               exists = true
             }
           })
