@@ -1,1 +1,0 @@
-{"name":"projects/dev-landlordai-8221e/agent/intents/2e2fa184-2bf6-466c-9807-a40a81eeba9f","displayName":"SPEC_STRUC---PaymentMethod","priority":500000,"webhookState":"WEBHOOK_STATE_ENABLED","parameters":[{"name":"af4ce4f7-1a04-49c7-a180-07bda1d2d9ce","displayName":"Payment","value":"$Payment","entityTypeDisplayName":"@Payment"}],"messages":[{"text":{}}]}

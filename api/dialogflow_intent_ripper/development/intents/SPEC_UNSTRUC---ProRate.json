@@ -1,1 +1,0 @@
-{"name":"projects/dev-landlordai-8221e/agent/intents/7adb0f5d-0503-4692-98d3-d87348ad7ea2","displayName":"SPEC_UNSTRUC---ProRate","priority":500000,"webhookState":"WEBHOOK_STATE_ENABLED","parameters":[{"name":"eb5be15e-5344-4288-8dc0-91988f10bcdc","displayName":"ProRate","value":"$ProRate","entityTypeDisplayName":"@ProRate"}],"messages":[{"text":{}}]}

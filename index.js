@@ -16,7 +16,7 @@ const question1 = () => {
 
       - Enter A: Update DialogFlow -> Typeform Mappings
       - Enter B: Update Knowledge Domain Mappings
-      - Enter C: Update DialogFlow Intents
+      - Enter C: Download DialogFlow Intents
       - Enter D: Create Knowledge Domain Templates
 
       - Enter Q: To exit

@@ -1,1 +1,0 @@
-{"name":"projects/dev-landlordai-8221e/agent/intents/8fa8f098-f9c6-454f-9715-b255ef3539ab","displayName":"SPEC_UNSTRUC---LeaseDiscount","priority":500000,"webhookState":"WEBHOOK_STATE_ENABLED","parameters":[{"name":"72c7271d-00d0-48ce-a138-39968ca10d29","displayName":"Repairs","value":"$Repairs","entityTypeDisplayName":"@Repairs"}],"messages":[{"text":{}}]}

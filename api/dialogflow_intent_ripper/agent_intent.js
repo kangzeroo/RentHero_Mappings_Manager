@@ -51,10 +51,12 @@ const downloadIntentsFromAgent = () => {
     })
     .then((data) => {
       console.log(data)
+      console.log(data.length)
       console.log('---> Finished downloading intents')
     })
     .catch((err) => {
       console.log(err.response.data)
+      console.log('---> Error downloading intents')
     })
 }
 

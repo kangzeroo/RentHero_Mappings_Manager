@@ -1,0 +1,1 @@
+{"name":"projects/dev-landlordai-8221e/agent/intents/d1dbe468-ab72-4afe-9a36-3607b801605b","displayName":"SEARCHING---BuildingAmenities","priority":500000,"parameters":[{"name":"c0ed8ce7-232e-4336-bb5c-8e8d2d8934ec","displayName":"Amenities","value":"$Amenities","entityTypeDisplayName":"@Amenities"}],"messages":[{"text":{}}]}

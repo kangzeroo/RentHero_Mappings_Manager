@@ -1,1 +1,0 @@
-{"name":"projects/dev-landlordai-8221e/agent/intents/288b6639-9155-4c56-b711-da52713c950a","displayName":"Default Welcome Intent","priority":500000,"events":["WELCOME"],"action":"input.welcome","messages":[{"text":{"text":["Hi!","Hello!","Good day!","Greetings!"]}}]}

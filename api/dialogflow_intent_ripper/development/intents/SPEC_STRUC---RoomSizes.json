@@ -1,1 +1,0 @@
-{"name":"projects/dev-landlordai-8221e/agent/intents/3efadf4d-4a38-430d-842e-f951da4dfa16","displayName":"SPEC_STRUC---RoomSizes","priority":500000,"parameters":[{"name":"09bfce37-342b-45c1-ad54-d252c5129d9a","displayName":"Room","value":"$Room","entityTypeDisplayName":"@Room"}],"messages":[{"text":{"text":["The rooms range from 400sqft to 600 sqft."]}}]}
