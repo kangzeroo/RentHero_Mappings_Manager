@@ -3,29 +3,20 @@
    "questions":[
       {
          "question_ids":[
-            "DuwxJezZWAZ7"
-         ],
-         "sample_phrasing":"Hello {{hidden:landlord_name}}, today you will be teaching your AI how to answer questions about the lease.",
-         "tag_ids":[
-
-         ]
-      },
-      {
-         "question_ids":[
             "VAza8H2JNFfq"
          ],
          "sample_phrasing":"What is the rental term?",
          "tag_ids":[
-
+           "LEASE_TERMS"
          ]
       },
       {
          "question_ids":[
-            "jY5KaIW5X4BA"
+            "JNb5a99VFz18"
          ],
          "sample_phrasing":"Is the lease renewable?",
          "tag_ids":[
-
+           "LEASE_RENEWABLE"
          ]
       },
       {
@@ -34,7 +25,7 @@
          ],
          "sample_phrasing":"Who handles the billing and paperwork for the utilities?",
          "tag_ids":[
-
+           "UTILITIES_PAPERWORK"
          ]
       },
       {
@@ -43,7 +34,7 @@
          ],
          "sample_phrasing":"Do you require the tenant to have tenant insurance?",
          "tag_ids":[
-
+           "TENANT_INSURANCE"
          ]
       },
       {
@@ -52,7 +43,7 @@
          ],
          "sample_phrasing":"How much is the lease deposit?",
          "tag_ids":[
-
+           "DEPOSIT_REQUIREMENTS"
          ]
       },
       {
@@ -61,7 +52,7 @@
          ],
          "sample_phrasing":"Is the lease joint liability or individual liability?",
          "tag_ids":[
-
+           "LEASE_LIABILITY"
          ]
       },
       {
@@ -70,7 +61,7 @@
          ],
          "sample_phrasing":"Are there any rental discounts?",
          "tag_ids":[
-
+           "LEASE_DISCOUNT"
          ]
       },
       {
@@ -79,7 +70,16 @@
          ],
          "sample_phrasing":"Do you pro-rate rent?",
          "tag_ids":[
-
+           "PRORATED_RENT"
+         ]
+      },
+      {
+         "question_ids":[
+            "p48K3TVY6GW5"
+         ],
+         "sample_phrasing":"Are there any additional fees?",
+         "tag_ids":[
+           "ADDITIONAL_FEES"
          ]
       },
       {
@@ -88,7 +88,7 @@
          ],
          "sample_phrasing":"What are the conditions for a tenant to sublet their room out?",
          "tag_ids":[
-
+           "SUBLET"
          ]
       },
       {
@@ -97,7 +97,7 @@
          ],
          "sample_phrasing":"What is the preferred rent payment method? ",
          "tag_ids":[
-
+           "PAYMENT_METHOD"
          ]
       },
       {
@@ -106,7 +106,7 @@
          ],
          "sample_phrasing":"Do you allow early lease terminations? If so, what are the conditions?",
          "tag_ids":[
-
+           "EARLY_TERMINATION"
          ]
       },
       {
@@ -115,7 +115,7 @@
          ],
          "sample_phrasing":"Can you hold the suite if I need extra time? Does it require a deposit commitment?",
          "tag_ids":[
-
+           "HOLDING_COMMITMENT"
          ]
       }
    ]

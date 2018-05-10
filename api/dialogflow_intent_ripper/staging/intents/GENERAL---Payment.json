@@ -1,0 +1,1 @@
+{"name":"projects/staging-landlordai/agent/intents/23b7d861-663e-455e-b4aa-5cdd529ff489","displayName":"GENERAL---Payment","priority":500000,"parameters":[{"name":"e359bdb0-4e4f-4bd8-8675-aa4042382b15","displayName":"Payment","value":"$Payment","entityTypeDisplayName":"@Payment"}],"messages":[{"text":{}}]}

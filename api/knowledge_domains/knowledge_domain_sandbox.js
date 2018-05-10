@@ -11,7 +11,8 @@ const generateDomainTemplates = () => {
       'Authorization': `Bearer ${auth_token}`
     }
   }
-  axios.get(`https://dialogflow.googleapis.com/v2/projects/${PROJECT_ID}/agent/intents`, header)
+  console.log(header)
+  axios.get(`https://dialogflow.googleapis.com/v2/projects/${PROJECT_ID}/agent/intents?pageSize=1000`, header)
     .then((data) => {
       console.log('Got the agent intents!')
       const domains = [
@@ -46,7 +47,7 @@ const generateDomainTemplates = () => {
       })
     })
     .catch((err) => {
-      console.log(err)
+      console.log(err.response.data)
       console.log('---> Error creating the templates')
     })
 }

@@ -42,7 +42,7 @@ const templateDialogFlow = () => {
       'Authorization': `Bearer ${auth_token}`
     }
   }
-  axios.get(`https://dialogflow.googleapis.com/v2/projects/${PROJECT_ID}/agent/intents`, header)
+  axios.get(`https://dialogflow.googleapis.com/v2/projects/${PROJECT_ID}/agent/intents?pageSize=1000`, header)
     .then((data) => {
       const list = data.data.intents.filter((int) => {
         return int.displayName.indexOf('SPEC_UNSTRUC') > -1

@@ -1,0 +1,1 @@
+{"name":"projects/staging-landlordai/agent/intents/6828c71f-e0bb-42e4-abef-b3250cb28798","displayName":"TOURS---ContactName","priority":500000,"parameters":[{"name":"f5f418eb-5bf1-4d0d-bcb7-5fdbe2b2de69","displayName":"given-name","value":"$given-name","entityTypeDisplayName":"@sys.given-name"}],"messages":[{"text":{}}]}

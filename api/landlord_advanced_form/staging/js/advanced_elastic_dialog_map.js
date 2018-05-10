@@ -1,88 +1,121 @@
 exports.advanced_elastic_dialog_map = {
-  "form_id": "f2E1MJ",
-   "relationships":[
+   "form_id":"f2E1MJ",
+   "questions":[
       {
-         "dialogFlow_intentName":"SPEC_UNSTRUC---LeaseDiscount",
-         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/8fa8f098-f9c6-454f-9715-b255ef3539ab",
-         "typeForm_Tags":[
-           "LEASE_DISCOUNT"
-         ]
-      },
-      {
-         "dialogFlow_intentName":"SPEC_UNSTRUC---Commitment",
-         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/4af99d87-d70b-485d-bf8f-62667dbc48ae",
-         "typeForm_Tags":[
-           "HOLDING_COMMITMENT"
-         ]
-      },
-      {
-         "dialogFlow_intentName":"SPEC_UNSTRUC---LeaseRenewal",
-         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/96baa61f-d125-49d3-938c-a395798fa9d5",
-         "typeForm_Tags":[
-           "LEASE_RENEWABLE"
-         ]
-      },
-      {
-         "dialogFlow_intentName":"SPEC_UNSTRUC---ProRate",
-         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/7adb0f5d-0503-4692-98d3-d87348ad7ea2",
-         "typeForm_Tags":[
-           "PRORATED_RENT"
-         ]
-      },
-      {
-         "dialogFlow_intentName":"SPEC_UNSTRUC---UtilitiesPaperwork",
-         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/d77f4f5b-bb5e-4300-b11e-29046f169b61",
-         "typeForm_Tags":[
-           "UTILITIES_PAPERWORK"
-         ]
-      },
-      {
-         "dialogFlow_intentName":"SPEC_UNSTRUC---TenantInsurance",
-         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/a3f5fe2e-29b2-4320-b5f5-c48047a8037d",
-         "typeForm_Tags":[
-           "TENANT_INSURANCE"
-         ]
-      },
-      {
-         "dialogFlow_intentName":"SPEC_UNSTRUC---LeaseTerms",
-         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/f3f6efee-20ba-48b4-a371-99de6481966b",
-         "typeForm_Tags":[
+         "question_ids":[
+            "VAza8H2JNFfq"
+         ],
+         "sample_phrasing":"What is the rental term?",
+         "tag_ids":[
            "LEASE_TERMS"
          ]
       },
       {
-         "dialogFlow_intentName":"SPEC_UNSTRUC---SubletConditions",
-         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/3c83bc73-9d32-44fb-93e0-923ca93a8658",
-         "typeForm_Tags":[
-           "SUBLET"
+         "question_ids":[
+            "JNb5a99VFz18"
+         ],
+         "sample_phrasing":"Is the lease renewable?",
+         "tag_ids":[
+           "LEASE_RENEWABLE"
          ]
       },
       {
-         "dialogFlow_intentName":"SPEC_UNSTRUC---Liability",
-         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/38ff2587-ecac-4102-b64d-3ffd48add5ed",
-         "typeForm_Tags":[
-           "LEASE_LIABILITY"
+         "question_ids":[
+            "gSJdPpfHYdMF"
+         ],
+         "sample_phrasing":"Who handles the billing and paperwork for the utilities?",
+         "tag_ids":[
+           "UTILITIES_PAPERWORK"
          ]
       },
       {
-         "dialogFlow_intentName":"SPEC_UNSTRUC---DepositRequirements",
-         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/6d3705f2-32cf-432b-bf21-4dddc6611200",
-         "typeForm_Tags":[
+         "question_ids":[
+            "VwhxSgjVaXMM"
+         ],
+         "sample_phrasing":"Do you require the tenant to have tenant insurance?",
+         "tag_ids":[
+           "TENANT_INSURANCE"
+         ]
+      },
+      {
+         "question_ids":[
+            "oi0spke884It"
+         ],
+         "sample_phrasing":"How much is the lease deposit?",
+         "tag_ids":[
            "DEPOSIT_REQUIREMENTS"
          ]
       },
       {
-         "dialogFlow_intentName":"SPEC_UNSTRUC---PaymentMethod",
-         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/2e2fa184-2bf6-466c-9807-a40a81eeba9f",
-         "typeForm_Tags":[
+         "question_ids":[
+            "jircMez9JF2a"
+         ],
+         "sample_phrasing":"Is the lease joint liability or individual liability?",
+         "tag_ids":[
+           "LEASE_LIABILITY"
+         ]
+      },
+      {
+         "question_ids":[
+            "RkppvPfv0Ej7"
+         ],
+         "sample_phrasing":"Are there any rental discounts?",
+         "tag_ids":[
+           "LEASE_DISCOUNT"
+         ]
+      },
+      {
+         "question_ids":[
+            "NSXHLmEcbUFn"
+         ],
+         "sample_phrasing":"Do you pro-rate rent?",
+         "tag_ids":[
+           "PRORATED_RENT"
+         ]
+      },
+      {
+         "question_ids":[
+            "p48K3TVY6GW5"
+         ],
+         "sample_phrasing":"Are there any additional fees?",
+         "tag_ids":[
+           "ADDITIONAL_FEES"
+         ]
+      },
+      {
+         "question_ids":[
+            "gtPN5O3RJSq6"
+         ],
+         "sample_phrasing":"What are the conditions for a tenant to sublet their room out?",
+         "tag_ids":[
+           "SUBLET"
+         ]
+      },
+      {
+         "question_ids":[
+            "u7zJvu2PXvAZ"
+         ],
+         "sample_phrasing":"What is the preferred rent payment method? ",
+         "tag_ids":[
            "PAYMENT_METHOD"
          ]
       },
       {
-         "dialogFlow_intentName":"SPEC_UNSTRUC---EarlyTermination",
-         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/2276a5ba-b71a-4d6f-9df3-0aad69a4e0f3",
-         "typeForm_Tags":[
+         "question_ids":[
+            "nu235hwkwAfU"
+         ],
+         "sample_phrasing":"Do you allow early lease terminations? If so, what are the conditions?",
+         "tag_ids":[
            "EARLY_TERMINATION"
+         ]
+      },
+      {
+         "question_ids":[
+            "dpWtD72OeLNM"
+         ],
+         "sample_phrasing":"Can you hold the suite if I need extra time? Does it require a deposit commitment?",
+         "tag_ids":[
+           "HOLDING_COMMITMENT"
          ]
       }
    ]

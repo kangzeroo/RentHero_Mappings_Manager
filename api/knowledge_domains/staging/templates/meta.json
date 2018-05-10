@@ -1,15 +1,1 @@
-{
-   "domain_prefix":"META",
-   "relationships":[
-      {
-         "dialogFlow_intentName":"META---AboutRentHero",
-         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/ebf0006b-ead8-4a85-bf99-912770a060a7",
-         "endpoint":""
-      },
-      {
-         "dialogFlow_intentName":"META---AboutAi",
-         "dialogFlow_intentID":"projects/staging-landlordai/agent/intents/f53ec660-7f1e-4d6e-8311-07ee7e8c5d16",
-         "endpoint":""
-      }
-   ]
-}
+{"domain_prefix":"META","relationships":[{"dialogFlow_intentName":"META---WhyCreated","dialogFlow_intentID":"projects/staging-landlordai/agent/intents/9702e2c3-81b2-4966-8343-36d630844b55","endpoint":""},{"dialogFlow_intentName":"META---WhereOriginated","dialogFlow_intentID":"projects/staging-landlordai/agent/intents/5ce7fd83-0d04-4b28-8916-f5247b21d049","endpoint":""},{"dialogFlow_intentName":"META---WhenOriginated","dialogFlow_intentID":"projects/staging-landlordai/agent/intents/4469385a-e342-4a75-8352-37f8feae5f12","endpoint":""},{"dialogFlow_intentName":"META---AboutAi","dialogFlow_intentID":"projects/staging-landlordai/agent/intents/f53ec660-7f1e-4d6e-8311-07ee7e8c5d16","endpoint":""},{"dialogFlow_intentName":"META---AboutRentHero","dialogFlow_intentID":"projects/staging-landlordai/agent/intents/ebf0006b-ead8-4a85-bf99-912770a060a7","endpoint":""},{"dialogFlow_intentName":"META---HowCreated","dialogFlow_intentID":"projects/staging-landlordai/agent/intents/8dd95d3f-6f2c-4cb8-b4d6-30064b451fa0","endpoint":""},{"dialogFlow_intentName":"META---WhatAreYou","dialogFlow_intentID":"projects/staging-landlordai/agent/intents/5a401c3a-dcc5-46ff-a0c7-a9f1c0369fa5","endpoint":""}]}

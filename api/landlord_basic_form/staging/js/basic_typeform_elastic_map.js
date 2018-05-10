@@ -8,7 +8,16 @@ exports.basic_typeform_elastic_map = {
          ],
          "sample_phrasing":"Can the tenant decorate the suite?",
          "tag_ids":[
-           "DECORATE"
+            "DECORATE"
+         ]
+      },
+      {
+         "question_ids":[
+            "TGELav6Bxbl8"
+         ],
+         "sample_phrasing":"Is furniture provided?",
+         "tag_ids":[
+            "FURNITURE"
          ]
       },
       {
@@ -17,7 +26,7 @@ exports.basic_typeform_elastic_map = {
          ],
          "sample_phrasing":"Are there any noise restrictions?",
          "tag_ids":[
-           "NOISE"
+            "NOISE"
          ]
       },
       {
@@ -26,7 +35,7 @@ exports.basic_typeform_elastic_map = {
          ],
          "sample_phrasing":"Are there any special guest policies?",
          "tag_ids":[
-           "GUESTS"
+            "GUESTS"
          ]
       },
       {
@@ -35,7 +44,7 @@ exports.basic_typeform_elastic_map = {
          ],
          "sample_phrasing":"Who is responsible for landscaping such as snow shovelling or collecting leaves? ",
          "tag_ids":[
-           "LAWNCARE"
+            "LANDSCAPING"
          ]
       },
       {
@@ -44,7 +53,16 @@ exports.basic_typeform_elastic_map = {
          ],
          "sample_phrasing":"What about garbage responsibility?",
          "tag_ids":[
-           "GARBAGE"
+            "GARBAGE"
+         ]
+      },
+      {
+         "question_ids":[
+            "gr0GZcwuWKvk"
+         ],
+         "sample_phrasing":"How big is the rental unit?",
+         "tag_ids":[
+            "UNITSIZE"
          ]
       },
       {
@@ -53,16 +71,7 @@ exports.basic_typeform_elastic_map = {
          ],
          "sample_phrasing":"How often are inspections done? ",
          "tag_ids":[
-           "INSPECTIONS"
-         ]
-      },
-      {
-         "question_ids":[
-            "ROKbbz1J8AwJ"
-         ],
-         "sample_phrasing":"Is there a waiting list for the suite? ",
-         "tag_ids":[
-           "WAITLIST"
+            "INSPECTIONS"
          ]
       },
       {
@@ -71,7 +80,16 @@ exports.basic_typeform_elastic_map = {
          ],
          "sample_phrasing":"Where can I find parking? How many spots?",
          "tag_ids":[
-           "PARKING"
+            "PARKING"
+         ]
+      },
+      {
+         "question_ids":[
+            "ROKbbz1J8AwJ"
+         ],
+         "sample_phrasing":"Is there a waiting list for the suite? ",
+         "tag_ids":[
+            "WAITINGLIST"
          ]
       }
    ]
