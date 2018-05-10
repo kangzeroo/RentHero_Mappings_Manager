@@ -1,0 +1,1 @@
+{"name":"projects/dev-landlordai-8221e/agent/intents/b497c8a6-9680-4bd4-9173-0ca086f7a028","displayName":"GENERAL---Phone#","priority":500000,"parameters":[{"name":"9187999e-49a7-4335-b59a-0ff7746d2895","displayName":"ContactInformation","value":"$ContactInformation","entityTypeDisplayName":"@ContactInformation","isList":true}],"messages":[{"text":{}}]}

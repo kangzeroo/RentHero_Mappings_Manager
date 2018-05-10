@@ -1,0 +1,1 @@
+{"name":"projects/staging-landlordai/agent/intents/7faba240-e5c7-4c1a-b1ce-31c2d1fd5593","displayName":"SEARCHING---LeaseType","priority":500000,"parameters":[{"name":"3d87c3e8-7dce-4a5e-ba4a-a5c8ac1a0eee","displayName":"LeaseTerms","value":"$LeaseTerms","entityTypeDisplayName":"@LeaseTerms","isList":true}],"messages":[{"text":{}}]}

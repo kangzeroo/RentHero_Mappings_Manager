@@ -1,75 +1,122 @@
 exports.advanced_elastic_dialog_map = {
-  form_id: 'f2E1MJ',
-  relationships: [
-    // {
-    //   dialogFlow_intentName: 'SUPPORT_DOCS',
-    //   dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/b419e2b6-7aa9-42ab-b217-fc7eb3143ef6',
-    //   typeForm_Tags: [
-    //     'SUPPORT_DOCS'
-    //   ]
-    // },
-    {
-      dialogFlow_intentName: 'LEASE_DEPOSIT',
-      dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/6be7af71-ddb6-4f09-bb87-30bbc86f34d8',
-      typeForm_Tags: [
-        'LEASE_DEPOSIT'
-      ]
-    },
-    // {
-    //   dialogFlow_intentName: 'LEASE_LIABILITY',
-    //   dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/23782539-dd7a-4dd3-9d9c-ceee5633436e',
-    //   typeForm_Tags: [
-    //     'LEASE_LIABILITY'
-    //   ]
-    // },
-    {
-      dialogFlow_intentName: 'LEASE_DURATION',
-      dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/8cb918be-8aea-4b7a-b3bb-c0325384c484',
-      typeForm_Tags: [
-        'LEASE_DURATION'
-      ]
-    },
-    {
-      dialogFlow_intentName: 'LEASE_RENEWABLE',
-      dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/6e9dac2f-f05d-4bf2-84df-f241fb1f9489',
-      typeForm_Tags: [
-        'LEASE_RENEWABLE'
-      ]
-    },
-    // {
-    //   dialogFlow_intentName: 'SUBLET_CONDITIONS',
-    //   dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/8cb918be-8aea-4b7a-b3bb-c0325384c484',
-    //   typeForm_Tags: [
-    //     'SUBLET_CONDITIONS'
-    //   ]
-    // },
-    {
-      dialogFlow_intentName: 'PAYMENT_METHODS',
-      dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/759929d9-f755-4ff4-be12-9cc34b9ffb50',
-      typeForm_Tags: [
-        'PAYMENT_METHODS'
-      ]
-    },
-    {
-      dialogFlow_intentName: 'LEASE_EARLY_TERMINATION',
-      dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/193e3285-eda5-422d-8718-fe1658c09a15',
-      typeForm_Tags: [
-        'LEASE_EARLY_TERMINATION'
-      ]
-    },
-    {
-      dialogFlow_intentName: 'LEASE_HOLD',
-      dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/03c41885-6257-41ca-9fdd-dc1d269baffb',
-      typeForm_Tags: [
-        'LEASE_HOLD'
-      ]
-    },
-    {
-      dialogFlow_intentName: 'LEASE_DISCOUNT',
-      dialogFlow_intentID: 'projects/renthero-landlord-ai/agent/intents/66272be5-6642-4cd5-abd2-e5c71d67e042',
-      typeForm_Tags: [
-        'LEASE_DISCOUNT'
-      ]
-    }
-  ]
+   "form_id":"f2E1MJ",
+   "questions":[
+      {
+         "question_ids":[
+            "VAza8H2JNFfq"
+         ],
+         "sample_phrasing":"What is the rental term?",
+         "tag_ids":[
+           "LEASE_TERMS"
+         ]
+      },
+      {
+         "question_ids":[
+            "JNb5a99VFz18"
+         ],
+         "sample_phrasing":"Is the lease renewable?",
+         "tag_ids":[
+           "LEASE_RENEWABLE"
+         ]
+      },
+      {
+         "question_ids":[
+            "gSJdPpfHYdMF"
+         ],
+         "sample_phrasing":"Who handles the billing and paperwork for the utilities?",
+         "tag_ids":[
+           "UTILITIES_PAPERWORK"
+         ]
+      },
+      {
+         "question_ids":[
+            "VwhxSgjVaXMM"
+         ],
+         "sample_phrasing":"Do you require the tenant to have tenant insurance?",
+         "tag_ids":[
+           "TENANT_INSURANCE"
+         ]
+      },
+      {
+         "question_ids":[
+            "oi0spke884It"
+         ],
+         "sample_phrasing":"How much is the lease deposit?",
+         "tag_ids":[
+           "DEPOSIT_REQUIREMENTS"
+         ]
+      },
+      {
+         "question_ids":[
+            "jircMez9JF2a"
+         ],
+         "sample_phrasing":"Is the lease joint liability or individual liability?",
+         "tag_ids":[
+           "LEASE_LIABILITY"
+         ]
+      },
+      {
+         "question_ids":[
+            "RkppvPfv0Ej7"
+         ],
+         "sample_phrasing":"Are there any rental discounts?",
+         "tag_ids":[
+           "LEASE_DISCOUNT"
+         ]
+      },
+      {
+         "question_ids":[
+            "NSXHLmEcbUFn"
+         ],
+         "sample_phrasing":"Do you pro-rate rent?",
+         "tag_ids":[
+           "PRORATED_RENT"
+         ]
+      },
+      {
+         "question_ids":[
+            "p48K3TVY6GW5"
+         ],
+         "sample_phrasing":"Are there any additional fees?",
+         "tag_ids":[
+           "ADDITIONAL_FEES"
+         ]
+      },
+      {
+         "question_ids":[
+            "gtPN5O3RJSq6"
+         ],
+         "sample_phrasing":"What are the conditions for a tenant to sublet their room out?",
+         "tag_ids":[
+           "SUBLET"
+         ]
+      },
+      {
+         "question_ids":[
+            "u7zJvu2PXvAZ"
+         ],
+         "sample_phrasing":"What is the preferred rent payment method? ",
+         "tag_ids":[
+           "PAYMENT_METHOD"
+         ]
+      },
+      {
+         "question_ids":[
+            "nu235hwkwAfU"
+         ],
+         "sample_phrasing":"Do you allow early lease terminations? If so, what are the conditions?",
+         "tag_ids":[
+           "EARLY_TERMINATION"
+         ]
+      },
+      {
+         "question_ids":[
+            "dpWtD72OeLNM"
+         ],
+         "sample_phrasing":"Can you hold the suite if I need extra time? Does it require a deposit commitment?",
+         "tag_ids":[
+           "HOLDING_COMMITMENT"
+         ]
+      }
+   ]
 }

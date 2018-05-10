@@ -1,0 +1,1 @@
+{"name":"projects/dev-landlordai-8221e/agent/intents/756abbf6-8c2b-4963-aa39-f8b74bfd6792","displayName":"GENERAL---TenantDemand","priority":500000,"parameters":[{"name":"0991af42-fa79-4909-b395-756a9c6855d0","displayName":"Decide","value":"$Decide","entityTypeDisplayName":"@Decide"}],"messages":[{"text":{}}]}

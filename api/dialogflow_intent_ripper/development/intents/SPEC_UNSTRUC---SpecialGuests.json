@@ -1,1 +1,0 @@
-{"name":"projects/dev-landlordai-8221e/agent/intents/cffd8f25-e919-4c1a-860d-0351783db85a","displayName":"SPEC_UNSTRUC---SpecialGuests","priority":500000,"webhookState":"WEBHOOK_STATE_ENABLED","parameters":[{"name":"51b20be4-5f9e-411f-ba6d-2d16761b8b3f","displayName":"Visitor","value":"$Visitor","entityTypeDisplayName":"@Visitor"}],"messages":[{"text":{}}]}

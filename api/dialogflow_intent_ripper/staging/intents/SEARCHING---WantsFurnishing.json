@@ -1,0 +1,1 @@
+{"name":"projects/staging-landlordai/agent/intents/8982cb3d-a842-477e-96df-8af9e4db749f","displayName":"SEARCHING---WantsFurnishing","priority":500000,"parameters":[{"name":"40bc1610-522b-4131-9cac-617217974cd2","displayName":"Furniture","value":"$Furniture","entityTypeDisplayName":"@Furniture"}],"messages":[{"text":{}}]}

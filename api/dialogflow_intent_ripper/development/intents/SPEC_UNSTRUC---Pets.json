@@ -1,0 +1,1 @@
+{"name":"projects/dev-landlordai-8221e/agent/intents/34142e54-9554-4f7f-93a5-11f0de294a57","displayName":"SPEC_UNSTRUC---Pets","priority":500000,"webhookState":"WEBHOOK_STATE_ENABLED","parameters":[{"name":"186715ea-0261-4303-b59f-5983923e04be","displayName":"Pet","value":"$Pet","entityTypeDisplayName":"@Pet","mandatory":true}],"messages":[{"text":{}}]}

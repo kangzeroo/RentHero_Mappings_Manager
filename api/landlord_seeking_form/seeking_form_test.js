@@ -62,7 +62,7 @@ const testDialogIntentsExist = () => {
     }
   }
   const p = new Promise((res, rej) => {
-    axios.get(`https://dialogflow.googleapis.com/v2/projects/${PROJECT_ID_LANDLORD_BACKEND}/agent/intents`, headers)
+    axios.get(`https://dialogflow.googleapis.com/v2/projects/${PROJECT_ID_LANDLORD_BACKEND}/agent/intents?pageSize=1000`, headers)
       .then((data) => {
         // res(data.data)
         let allExist = true
