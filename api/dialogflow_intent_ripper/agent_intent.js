@@ -11,7 +11,7 @@ const header = {
 const downloadIntentsFromAgent = () => {
   console.log('===> Downloading Intents From A DialogFlow Agent')
   console.log('--> '+PROJECT_ID)
-  axios.get(`https://dialogflow.googleapis.com/v2/projects/${PROJECT_ID}/agent/intents`, header)
+  axios.get(`https://dialogflow.googleapis.com/v2/projects/${PROJECT_ID}/agent/intents?pageSize=1000`, header)
     .then((data) => {
       console.log('Got some intents..')
       fs.writeFile(`./api/dialogflow_intent_ripper/${process.env.NODE_ENV}/intents/meta/intents.json`, JSON.stringify(data.data), function(err) {
