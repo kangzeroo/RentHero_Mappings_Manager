@@ -7,7 +7,11 @@
     "dev": "NODE_ENV=development node index.js",
     "staging": "NODE_ENV=staging node index.js",
     "prod": "NODE_ENV=production node index.js",
-    "dangerously-update": "NODE_ENV=staging node uploadIntent.js"
+    "dangerously-update": "NODE_ENV=staging node uploadIntent.js",
+    "win-dev": "set NODE_ENV=development&&node index.js",
+    "win-staging": "set NODE_ENV=staging&&node index.js",
+    "win-prod": "set NODE_ENV=production&&index.js",
+    "win-dangerously-update": "set NODE_ENV=staging&&node uploadIntent.js"
   },
   "engines": {
     "node": "6.9.0"
