@@ -55,6 +55,16 @@ exports.intents = {
       dialogFlow_intentName: 'SPEC_STRUC---SpecificAmenity',
       dialogFlow_intentID: 'projects/dev-landlordai-8221e/agent/intents/fdee37e4-17fd-4a77-8cbd-febb1684f465',
       endpoint: 'https://renthero.host:8304/get_specific_amenity'
-    }
+    },
+    {
+      dialogFlow_intentName: 'SPEC_STRUC---Bathrooms',
+      dialogFlow_intentID: 'projects/dev-landlordai-8221e/agent/intents/fdee37e4-17fd-4a77-8cbd-febb1684f465',
+      endpoint: 'https://renthero.host:8304/get_bathrooms'
+    },
+    {
+      dialogFlow_intentName: 'SPEC_STRUC---Availability',
+      dialogFlow_intentID: 'projects/dev-landlordai-8221e/agent/intents/fdee37e4-17fd-4a77-8cbd-febb1684f465',
+      endpoint: 'https://renthero.host:8304/get_lease_availability'
+    },
   ]
 }
