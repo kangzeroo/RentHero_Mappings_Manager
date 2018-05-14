@@ -2,8 +2,8 @@ const axios = require('axios')
 const auth_token = require('../../credentials/'+process.env.NODE_ENV+'/dialogflow_api_key').auth_token
 const basic_elastic_dialog_map = require('./'+process.env.NODE_ENV+'/js/basic_elastic_dialog_map').basic_elastic_dialog_map
 const basic_typeform_elastic_map = require('./'+process.env.NODE_ENV+'/js/basic_typeform_elastic_map').basic_typeform_elastic_map
-const PROJECT_ID_LANDLORD_AI = require('../ENV_CREDS').PROJECT_ID_LANDLORD_AI
-const basic_form_id = require('../mapping_locations').getTypeforms().basic_form_id
+const PROJECT_ID = require(`../../credentials/${process.env.NODE_ENV}/dialogflow_profile`).PROJECT_ID
+const basic_form_id = require('../../credentials/'+process.env.NODE_ENV+'/typeform_profile').basic_form_id
 
 const testValidityOfMappings = () => {
   let tests = {
@@ -62,7 +62,7 @@ const testDialogIntentsExist = () => {
     }
   }
   const p = new Promise((res, rej) => {
-    axios.get(`https://dialogflow.googleapis.com/v2/projects/${PROJECT_ID_LANDLORD_AI}/agent/intents?pageSize=1000`, headers)
+    axios.get(`https://dialogflow.googleapis.com/v2/projects/${PROJECT_ID}/agent/intents?pageSize=1000`, headers)
       .then((data) => {
         // res(data.data)
         let allExist = true

@@ -29,7 +29,6 @@ Please keep all credentials secure inside the `credentials/` folder. Do not let 
 
 ## How to switch node environments (dev, staging, prod)
 1. Method 1 (preferred): Run the appropriate command: `npm run dev`, `npm run staging` or `npm run prod`
-2. Method 2 (deprecated): To change `NODE_ENV`, simply go to `./api/ENV_CREDS.js` and comment out `development`, `staging` or `production`. All `npm` actions will be applied to the `NODE_ENV` you choose. Be careful not to accidentally something in prod!
 
 ## How to get DialogFlow Credentials using Google OAuth Playground
 1. Go to `https://developers.google.com/oauthplayground/`

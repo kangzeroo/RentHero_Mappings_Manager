@@ -16,6 +16,7 @@ const generateDomainTemplates = () => {
     .then((data) => {
       console.log('Got the agent intents!')
       const domains = [
+        'INIT',
         'SPEC_UNSTRUC',
         'SPEC_STRUC',
         'GEO',

@@ -16,6 +16,7 @@ const update = (rl) => {
   const q1 = `
     Which knowledge_domain mapping do you want to update?
     \n
+    - INIT
     - META
     - SEARCHING
     - GENERAL
@@ -58,7 +59,9 @@ const update = (rl) => {
 const grabMapping = (answer) => {
   const p = new Promise((res, rej) => {
     let mapFile
-    if (answer === 'META') {
+    if (answer === 'INIT') {
+      mapFile = require('./'+process.env.NODE_ENV+'/js/init_intents').intents
+    } else if (answer === 'META') {
       mapFile = require('./'+process.env.NODE_ENV+'/js/meta_intents').intents
     } else if (answer === 'SEARCHING') {
       mapFile = require('./'+process.env.NODE_ENV+'/js/searching_intents').intents
