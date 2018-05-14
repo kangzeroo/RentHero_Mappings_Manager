@@ -17,7 +17,6 @@ const question1 = () => {
       - Enter A: Update DialogFlow -> Typeform Mappings
       - Enter B: Update Knowledge Domain Mappings
       - Enter C: Download DialogFlow Intents
-      - Enter D: Create Knowledge Domain Templates
 
       - Enter Q: To exit
     `
@@ -119,6 +118,7 @@ const question2 = (ans) => {
 
         - Enter A: Test the Knowledge Domain Mappings
         - Enter B: Update the Knowledge Domain Mappings
+        - Enter C: Generate a mappings template
       `
       rl.question(q2b, (answer) => {
         console.log(`--> You chose: ${answer}`);
@@ -135,6 +135,7 @@ const question2 = (ans) => {
           const q3 = `
             Which knowledge_domain mapping do you want to update?
             \n
+            - INIT
             - META
             - SEARCHING
             - GENERAL
@@ -174,6 +175,10 @@ const question2 = (ans) => {
               console.log(`======> ERROR! Could not find an S3 location for your chosen answer: ${answer}`)
             }
           });
+        } else if (answer === 'c') {
+          const generateDomainTemplates = require('./api/knowledge_domains/knowledge_domain_sandbox').generateDomainTemplates
+          generateDomainTemplates()
+          res()
         } else {
           rej('Not a valid selection')
         }
@@ -181,10 +186,6 @@ const question2 = (ans) => {
     } else if (ans === 'c') {
       const downloadIntentsFromAgent = require('./api/dialogflow_intent_ripper/agent_intent').downloadIntentsFromAgent
       downloadIntentsFromAgent()
-      res()
-    } else if (ans === 'd') {
-      const generateDomainTemplates = require('./api/knowledge_domains/knowledge_domain_sandbox').generateDomainTemplates
-      generateDomainTemplates()
       res()
     } else {
       rej('Not a valid selection.')
