@@ -9,7 +9,7 @@ exports.intents = {
     {
       dialogFlow_intentName: 'TOURS---InterestedProperty',
       dialogFlow_intentID: 'projects/dev-landlordai-8221e/agent/intents/0f2b8ad5-e932-49a3-a848-6149be3ef74f',
-      endpoint: 'https://c2f4c5d0.ngrok.io/interested_in_property'
+      endpoint: 'https://ec441353.ngrok.io/interested_in_property'
     }
   ]
 }
