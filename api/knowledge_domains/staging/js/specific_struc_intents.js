@@ -12,7 +12,7 @@ exports.intents = {
       endpoint: 'https://renthero.host:8304/monthly_cost_per_room'
     },
     {
-      dialogFlow_intentName: 'SPEC_STRUC---Images',
+      dialogFlow_intentName: 'SPEC_STRUC---RequestImages',
       dialogFlow_intentID: 'projects/dev-landlordai-8221e/agent/intents/ebc0403a-3a12-46bf-b55a-335ee0454d46',
       endpoint: 'https://renthero.host:8304/get_images_for_ad'
     },
