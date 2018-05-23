@@ -47,7 +47,12 @@ exports.intents = {
       endpoint: 'https://renthero.host:8304/get_num_rooms'
     },
     {
-      dialogFlow_intentName: 'SPEC_STRUC---Amenities',
+      dialogFlow_intentName: 'SPEC_STRUC---BuildingAmenities',
+      dialogFlow_intentID: 'projects/dev-landlordai-8221e/agent/intents/2b8b89e6-ad3a-495b-a1f7-86a23a3efb2d',
+      endpoint: 'https://renthero.host:8304/get_building_amenities'
+    },
+    {
+      dialogFlow_intentName: 'SPEC_STRUC---SuiteAmenities',
       dialogFlow_intentID: 'projects/dev-landlordai-8221e/agent/intents/ff78cb29-25cf-4e75-b840-93f85cc3803b',
       endpoint: 'https://renthero.host:8304/get_ad_amenities'
     },
