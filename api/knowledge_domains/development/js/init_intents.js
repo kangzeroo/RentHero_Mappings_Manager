@@ -4,17 +4,17 @@ exports.intents = {
     {
       dialogFlow_intentName: 'INIT---LandlordWidget',
       dialogFlow_intentID: 'projects/dev-landlordai-8221e/agent/intents/42b315ed-7eaa-41ba-9b1c-2d501e0c0b4a',
-      endpoint: 'https://38fa4d22.ngrok.io/init_message'
+      endpoint: 'https://3996cf61.ngrok.io/init_message'
     },
     {
       dialogFlow_intentName: 'INIT---Interested',
       dialogFlow_intentID: 'projects/dev-landlordai-8221e/agent/intents/42b315ed-7eaa-41ba-9b1c-2d501e0c0b4a',
-      endpoint: 'https://38fa4d22.ngrok.io/interested_in_property'
+      endpoint: 'https://3996cf61.ngrok.io/interested_in_property'
     },
     {
       dialogFlow_intentName: 'INIT---Qualification',
       dialogFlow_intentID: 'projects/dev-landlordai-8221e/agent/intents/62e6be46-a719-4a98-a3ff-b3b49948ef5b',
-      endpoint: 'https://38fa4d22.ngrok.io/init_qualification'
+      endpoint: 'https://3996cf61.ngrok.io/init_qualification'
     }
   ]
 }
